@@ -1,0 +1,132 @@
+ /* Basic CSS Reset */
+ * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+/* Top blue strip */
+.top-strip {
+  background-color: #007bff;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 800px; /* Adjusted max-width */
+  margin-left: 10px;
+  margin-top: 10px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Additional text */
+.additional-text {
+  margin-bottom: 20px;
+}
+
+/* Text on the left side */
+.text-left {
+  margin-top: 10px;
+}
+
+/* Image on the right side */
+.image-right {
+  margin-top: 10px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000000' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E")
+    no-repeat right 10px center/15px 15px;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  float: right;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Clearfix */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.line {
+  height: 4px;
+  background-color: #3e4a56;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+/* Under line and text color */
+.our-text {
+  color: #337dff;
+  text-decoration: underline;
+}
+.agenda-text {
+  text-decoration: underline;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: none;
+}
+.image-container img {
+  width: 100px; /* Adjust image size as needed */
+  margin: 0 10px; /* Adjust margin between images */
+  box-shadow: none;
+}
+/* Left margin only for the images */
+.image-container img:first-child {
+  margin-left: 50px; /* Left margin */
+}
+.image-text {
+  text-align: center;
+}
+footer {
+  background-color: #6c757d; /* Gray background */
+  padding: 30px 0; /* Adjust padding */
+  text-align: center;
+  color: #fff; /* Text color */
+  font-weight: bold; /* Font weight */
+  margin-top: 20px;
+}
